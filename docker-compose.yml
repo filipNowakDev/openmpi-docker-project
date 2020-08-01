@@ -1,0 +1,18 @@
+version: "2"
+
+services:
+
+  mpi_head:
+    container_name: mpi_head
+    build: ./node
+    ports: 
+      - "2222:22"
+    links:
+      - mpi_node
+    volumes: 
+      - ./src/:/home/mpiuser/src:z
+
+  mpi_node:
+    build: ./node
+    volumes: 
+      - ./src/:/home/mpiuser/src:z
