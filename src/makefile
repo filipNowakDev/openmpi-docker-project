@@ -1,10 +1,10 @@
-EXECS=mpi_hello_world
+EXECS=main
 MPICC?=mpicc.openmpi
 
 all: ${EXECS}
 
-mpi_hello_world: mpi_hello_world.c
-	${MPICC} -o exec mpi_hello_world.c
+main: main.c
+	${MPICC} -o main main.c
 
 clean:
 	rm ${EXECS}

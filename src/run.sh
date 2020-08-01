@@ -1,1 +1,1 @@
-mpirun --hostfile ../hosts exec
+mpirun --hostfile ../hosts main
