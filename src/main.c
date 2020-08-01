@@ -4,7 +4,7 @@
 #include <time.h>
 
 #define MAX_NUMBER 1000
-#define ARRAY_PER_PROCESSOR 10
+#define ARRAY_PER_PROCESSOR 5
 
 int* init_random_array(int size);
 void sort_array(int* array, int size);

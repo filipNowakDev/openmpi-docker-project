@@ -20,3 +20,7 @@ To run freshly compiled executable you can `./run.sh` - this will execute the mp
 
 To exit the container press Ctrl-D.
 After that in host shell run `./shutdown-container.sh`. This will shutdown and remove cluster's containers.
+
+## Example
+
+Example program I created demostrates distributed bubble/merge alogrithm mixture which is cool and shows how to use scatter/gather MPI functions.
